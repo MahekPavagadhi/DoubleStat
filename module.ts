@@ -109,7 +109,7 @@ class SingleStatCtrl extends MetricsPanelCtrl {
     this.addEditorTab('Value Mappings', 'public/app/plugins/panel/singlestat/mappings.html', 3);
     this.unitFormats = kbn.getUnitFormats();
     this.unitFormatsTR = kbn.getUnitFormats();
-  }
+}
 
   setUnitFormat(subItem) {
     this.panel.format = subItem.value;
@@ -130,11 +130,11 @@ class SingleStatCtrl extends MetricsPanelCtrl {
 
     this.render();
   }
-  setUnitFormatTr(subItem) {
+
+  setUnitFormatTR(subItem) {
     this.panel.formatTR = subItem.valueTR;
     this.render();
   }
-
   seriesHandler(seriesData) {
     var series = new TimeSeries({
       datapoints: seriesData.datapoints,
